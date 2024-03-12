@@ -25,6 +25,8 @@ jobs:
     steps:
       - name: get code
         uses: actions/checkout@v4
+      - name: install dependencies
+        run: npm ci
       - name: build project
         run: npm run build
       - name: upload artifact
