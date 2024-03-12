@@ -1,0 +1,9 @@
+# https://leonardqmarcq.com/posts/deploying-a-docker-nextjs-app-on-aws-beanstalk
+
+Dockerfile
+.dockerignore
+node_modules
+npm-debug.log
+README.md
+.next
+.git
