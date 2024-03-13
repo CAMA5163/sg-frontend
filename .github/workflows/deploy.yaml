@@ -57,7 +57,7 @@ jobs:
           pip install awsebcli
       - name: init EB CLI
         run: |
-          eb init --keyname ${{secrets.AWS_ACCESS_KEY_ID}} ${{secrets.AWS_SECRET_ACCESS_KEY}} --platform ${{secrets.AWS_PLATFORM}} --region ${{secrets.AWS_DEFAULT_REGION }} frontend
+          eb init --keyname ${{secrets.AWS_ACCESS_KEY_ID}} ${{secrets.AWS_SECRET_ACCESS_KEY}} --platform ${{secrets.AWS_PLATFORM}} --region ${{secrets.AWS_DEFAULT_REGION }} --application_name frontend
       - name: deploy to Elastic Beanstalk
         run: |
           eb deploy Frontend-env
