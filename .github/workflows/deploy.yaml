@@ -55,9 +55,15 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install awsebcli
+      - name: configure AWS Credentials" Action for GitHub Actions
+        uses: aws-actions/configure-aws-credentials@v4.0.2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
       - name: init EB CLI
         run: |
-          eb init --profile eb-cli --keyname ${{secrets.AWS_ACCESS_KEY_ID}} ${{secrets.AWS_SECRET_ACCESS_KEY}} --platform ${{secrets.AWS_PLATFORM}} --region ${{secrets.AWS_DEFAULT_REGION }}
+          eb init --platform ${{secrets.AWS_PLATFORM}}
       - name: deploy to Elastic Beanstalk
         run: |
           eb deploy Frontend-env
