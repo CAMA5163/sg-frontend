@@ -60,4 +60,4 @@ jobs:
           eb init --keyname ${{secrets.AWS_ACCESS_KEY_ID}} ${{secrets.AWS_SECRET_ACCESS_KEY}} --platform ${{secrets.AWS_PLATFORM}} --region ${{secrets.AWS_DEFAULT_REGION }}
       - name: deploy to Elastic Beanstalk
         run: |
-          eb deploy
+          eb deploy Frontend-env
