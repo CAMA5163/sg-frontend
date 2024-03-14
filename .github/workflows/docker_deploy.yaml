@@ -5,7 +5,7 @@ on:
     branches:
       - 'main'
   workflow_dispatch:
-    
+
 jobs:
   docker:
     runs-on: ubuntu-latest
@@ -27,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: user/app:latest
+          tags: user/frontend:latest
