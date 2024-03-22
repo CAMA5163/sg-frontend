@@ -1,9 +1,46 @@
 # https://leonardqmarcq.com/posts/deploying-a-docker-nextjs-app-on-aws-beanstalk
 
-Dockerfile
-.dockerignore
-node_modules
-npm-debug.log
+# Dockerfile
+# .dockerignore
+# node_modules
+# npm-debug.log
 README.md
 .next
+# .git
+
+# https://bentranz.medium.com/deploy-dockerized-application-to-aws-elastic-beanstalk-f8a3cf2944a7
+
+# Ignore git files.
 .git
+.gitignore
+
+# Ignore docker files.
+Dockerfile
+Dockerfile.dev
+docker-compose.yml
+compose.yaml
+compose-dev.yaml
+Dockerrun.aws.json
+.dockerignore
+
+# Ignore node_modules & build files.
+node_modules
+npm-debug.log
+dist
+build
+
+# Ignore test files.
+test
+coverage
+
+# Ignore env files.
+.env
+.env.*
+
+# Ignore awseb files.
+.elasticbeanstalk
+.ebextensions
+.ebignore
+
+# Ignore GitHub files.
+.github
