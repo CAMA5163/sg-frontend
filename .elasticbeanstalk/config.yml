@@ -1,16 +1,13 @@
 branch-defaults:
   main:
-    environment: Frontendsg-env
+    environment: Frontend3-env
     group_suffix: null
 environment-defaults:
-  Frontend-env:
-    branch: null
-    repository: null
-  Frontendsg-env:
+  Frontend3-env:
     branch: null
     repository: null
 global:
-  application_name: frontend_sg
+  application_name: frontend3
   branch: null
   default_ec2_keyname: null
   default_platform: Docker
