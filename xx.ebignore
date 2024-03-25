@@ -13,6 +13,7 @@
 
 # misc
 .DS_Store
+.env/*
 .env.local
 .env.development.local
 .env.test.local
@@ -24,5 +25,7 @@ yarn-error.log*
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
+!.elasticbeanstalk/config.yml
 !.elasticbeanstalk/*.config.yml
 !.elasticbeanstalk/*.global.yml
+.ebextensions
